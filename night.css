@@ -1,0 +1,40 @@
+/*
+ *将下面的代码插入所有网页前面
+ *<link rel="stylesheet" type="text/css" href="night.css" />
+ */
+@keyframes liAnimation {0% {filter: hue-rotate(0deg);} 100% {filter: hue-rotate(360deg);}}
+::-webkit-scrollbar {width: 7px;height: 7px;}/*滚动条大小*/
+::-webkit-scrollbar-corner{opacity: 0;}/*正常情况下角落的样式*/
+::-webkit-scrollbar-thumb {background: rgba(0, 0, 0, 0.7);border-radius: 5px;}/*正常情况下滑块的样式*/
+:hover::-webkit-scrollbar-thumb {background: linear-gradient(#00DBDE 0%, #FC00FF 100%);}/*鼠标悬浮在该类指向的控件上时滑块的样式*/
+::-webkit-scrollbar-thumb:hover {background: linear-gradient(#FC00FF 0%, #00DBDE 100%);}/*鼠标悬浮在滑块上时滑块的样式*/
+:hover::-webkit-scrollbar-thumb:horizontal {background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);}/*鼠标悬浮在该类指向的控件上时水平滑块的样式*/
+::-webkit-scrollbar-thumb:horizontal:hover {background: linear-gradient(90deg, #FC00FF 0%, #00DBDE 100%);}/*鼠标悬浮在滑块上时水平滑块的样式*/
+::-webkit-scrollbar-track {background: rgba(0, 0, 0, 0.2);border-radius:5px;}/*正常时候的主干部分*/
+::-webkit-scrollbar-track:hover {background: rgba(255, 255, 255, 0.04);}/*鼠标悬浮在滚动条上的主干部分*/
+::-webkit-scrollbar-track-piece:vertical:start {background: rgba(0, 0, 0, 0.5);}/*正常情况下滑块上半部分的样式*/
+:hover::-webkit-scrollbar-track-piece:vertical:start {background: #00DBDE;}/*鼠标悬浮在该类指向的控件上时滑块上半部分的样式*/
+::-webkit-scrollbar-track-piece:horizontal:start {background: rgba(0, 0, 0, 0.5);}/*正常情况下水平滑块上半部分的样式*/
+:hover::-webkit-scrollbar-track-piece:horizontal:start {background: #00DBDE;}/*鼠标悬浮在该类指向的控件上时水平滑块上半部分的样式*/
+body {background: #3F3F3F;color: #DCDCCC;margin: 0px;padding: 8px;}
+ol {padding: 0 140px;list-style: decimal-leading-zero outside;}
+li {border-radius: 20px;}
+li:hover {background: linear-gradient(90deg, #3F3F3F, #CC7D0E);animation: liAnimation 8s linear 0s infinite;}
+li:after {content: '\261a';font-size: 64px;vertical-align: middle;position: relative;top: -8px;left: 50px;color: #3F3F3F;opacity: 0;transition: 0.4s;}
+li:hover:after {left: 0px;color: #DCDCCC;opacity: 1;}
+a {box-shadow: 0 9px #999;transition-duration: 0.4s;}
+a:link, a:visited {border-radius: 10px;background: #CC7D0E;color: #DCDCCC;padding: 10px;margin: 5px 5px 14px 5px;text-align: center;text-decoration: none;display: inline-block;}
+a:hover {background: #FF9D12;color: #ffffff;letter-spacing: 2px;}
+a:active {background: #8C560A;box-shadow: 0 5px #666;transform: translateY(4px);}
+th {background: #20B2AA;}
+tr:nth-child(odd) {background: #464646;}
+tr:nth-child(even) {background: #585858;}
+td:hover {color: #ffffff;background: #323232;}
+th:hover {color: #ffffff;background: #167E79;}
+table, tr, th, td {border: 3px solid #808080;transition-duration: 0.4s;word-break: break-all; word-wrap: break-word;}
+textarea {max-width: 100%;padding: 15px;box-sizing: border-box;border: 5px solid #FF0000;border-radius: 10px;background: #3F3F3F;color: #DCDCCC;font-size: 20px;resize: none;outline: none;transition-duration: 0.4s;}
+textarea:hover {border: 5px solid #7FFF00;}
+textarea:hover::-webkit-scrollbar-thumb {background: linear-gradient(#FF0000 0%, #7FFF00 100%);}
+textarea::-webkit-scrollbar-thumb:hover {background: linear-gradient(#00CED1 0%, #7FFF00 100%);}
+textarea:hover::-webkit-scrollbar-track-piece:vertical:start {background: rgba(0, 0, 0, 0);}
+textarea:hover::-webkit-scrollbar-track-piece:vertical:end {background: rgb(158, 253, 31);}
