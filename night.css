@@ -1,6 +1,6 @@
 /*
- *将下面的代码插入所有网页前面
- *<link rel="stylesheet" type="text/css" href="night.css" />
+ * 将下面的代码插入所有基岩版开发者文档的前面
+ * <link rel="stylesheet" type="text/css" href="night.css" />
  */
 @keyframes liAnimation {0% {filter: hue-rotate(0deg);} 100% {filter: hue-rotate(360deg);}}
 ::-webkit-scrollbar {width: 7px;height: 7px;}/*滚动条大小*/
