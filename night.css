@@ -2,7 +2,7 @@
  * 将下面的代码插入所有基岩版开发者文档的前面
  * <link rel="stylesheet" type="text/css" href="night.css" />
  */
-@keyframes liAnimation {0% {filter: hue-rotate(0deg);} 100% {filter: hue-rotate(360deg);}}
+@keyframes liAnimation {0% {filter: hue-rotate(0deg);} 100% {filter: hue-rotate(360deg);}}/*首页动画效果*/
 ::-webkit-scrollbar {width: 7px;height: 7px;}/*滚动条大小*/
 ::-webkit-scrollbar-corner{opacity: 0;}/*正常情况下角落的样式*/
 ::-webkit-scrollbar-thumb {background: rgba(0, 0, 0, 0.7);border-radius: 5px;}/*正常情况下滑块的样式*/
